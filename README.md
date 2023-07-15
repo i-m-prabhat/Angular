@@ -295,3 +295,104 @@ Welcome to my-app!
 
 18. `ng version`:
     Outputs Angular CLI version.
+
+
+
+# Folder Structure of an Angular Project
+
+```
+angular-project/
+├── e2e/
+├── node_modules/
+├── src/
+│   ├── app/
+│   ├── assets/
+│   ├── environments/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.scss
+│   └── test.ts
+├── .angular.json
+├── .editorconfig
+├── .gitignore
+├── angular.json
+├── karma.conf.js
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+├── tslint.json
+└── README.md
+```
+
+1. **e2e/:**
+   - This folder contains end-to-end tests written using tools like Protractor for testing the application's functionality from the user's perspective.
+
+2. **node_modules/:**
+   - This folder contains all the third-party dependencies installed via npm or yarn.
+
+3. **src/:**
+   - The `src/` folder is the heart of the Angular project, containing all the source code of the application.
+   - The `app/` folder contains the components, modules, services, and other application-specific files.
+   - The `assets/` folder is used to store static assets like images, fonts, and other files used by the application.
+   - The `environments/` folder contains environment-specific configuration files.
+
+4. **src/app/:**
+   - The `app/` folder is where most of the application logic resides.
+   - It contains various Angular components, services, modules, and other related files.
+
+5. **src/assets/:**
+   - The `assets/` folder holds static assets like images, fonts, and other files that need to be bundled with the application.
+
+6. **src/environments/:**
+   - The `environments/` folder contains environment-specific configuration files like environment.ts and environment.prod.ts.
+
+7. **src/favicon.ico:**
+   - This is the application's favicon, the small icon displayed in the browser tab.
+
+8. **src/index.html:**
+   - The `index.html` file is the main HTML file that serves as the entry point for the application. It contains the root component and other scripts and stylesheets.
+
+9. **src/main.ts:**
+   - The `main.ts` file is the main entry point of the application. It bootstraps the root module of the application and starts the application.
+
+10. **src/polyfills.ts:**
+    - The `polyfills.ts` file contains polyfills to support older browsers and ensure that the application runs smoothly across different environments.
+
+11. **src/styles.scss:**
+    - The `styles.scss` file is the main stylesheet of the application, where global styles and CSS variables can be defined.
+
+12. **src/test.ts:**
+    - The `test.ts` file is the entry point for the test setup. It configures and loads the necessary dependencies for running tests.
+
+13. **angular.json:**
+    - The `angular.json` file contains project-specific configurations, such as build options, assets, and environment settings.
+
+14. **.editorconfig:**
+    - The `.editorconfig` file contains editor settings for maintaining consistent coding styles across the development team.
+
+15. **.gitignore:**
+    - The `.gitignore` file specifies which files and folders should be ignored by version control systems like Git.
+
+16. **karma.conf.js:**
+    - The `karma.conf.js` file contains the configuration for the Karma test runner used for unit testing.
+
+17. **package.json:**
+    - The `package.json` file holds metadata and dependencies of the project, including scripts for tasks like building, testing, and serving the application.
+
+18. **tsconfig.app.json:**
+    - The `tsconfig.app.json` file contains TypeScript compiler options specific to the Angular application.
+
+19. **tsconfig.json:**
+    - The `tsconfig.json` file is the base TypeScript configuration file for the project.
+
+20. **tsconfig.spec.json:**
+    - The `tsconfig.spec.json` file contains TypeScript compiler options for running tests.
+
+21. **tslint.json:**
+    - The `tslint.json` file defines the linting rules and configurations for the TypeScript code.
+
+22. **README.md:**
+    - The `README.md` file typically contains project documentation, explaining how to set up and run the application.
