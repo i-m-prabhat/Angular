@@ -22,7 +22,7 @@
     "bootstrap": "^4.6.2",
     "jquery": "^3.6.4",
     "json-server": "^0.17.3",
-    "openai": "^3.3.0",
+    "openai": "^4.17.4",
     "rxjs": "~7.5.0",
     "save": "^2.9.0",
     "sweetalert2": "^11.7.5",
