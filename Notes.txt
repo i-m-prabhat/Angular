@@ -1,0 +1,113 @@
+What is Angular?
+- Angular is one of the most popular JavaScript framework for building client side applications. It was developed by Google and it's an open source project.
+- Angular is a development platform for building a single-page application for mobile and desktop.
+- It is used for building client side applications using HTML, CSS and a programming language like JavaScript or TypeScript.
+- Angular is not a programming Language in itself like javaScript.
+
+What is a Framework?
+- A framework is like a plateform for developing software applications.
+- A framework can have pre-defined classes and functions that can be re-used to add several functionalities, which otherwise we would have to write from scrach by our own.
+- A framework is a collection of pre-defined classes and methods which provides APIs for performing different operations when used in an application.
+
+What is a SPA?
+- A single page application is a web application, which has only one HTML page. When we navigate around, only the content of that HTML page changes. The page itself never changes.
+
+Advantage of SPA
+- Since we are using JavaScript to change the content of the page, it is much faster. Here we are not reaching out to the server to request a new piece of HTML data, every time we naviage to a different URL.
+- This allows us to create an application which is fast and reactive.
+
+Limitations of JavaScript/JQuery
+- Vanilla JavaScript of JQuery code becomes hard to maintain and we will need a way to properly structure our application.
+- A lot of applications build using vanilla JavaScript/JQuery is hard to test.
+- there are some functionality which we will have to write from scratch when using JavaScript/JQuery
+
+Advantage of using Angular
+- Angular gives our application a clean and loosely coupled structure that is easy to understand & maintain.
+- It brings a lot of utility code which can be re-used in lot of applications Especially. When dealing with user naviagtion & browser history.
+- Applications build with Angular are more testable.
+
+Angular version
+- Angular has evolved over the years, with AngularJS being the first version and Angular (version 2 and later) being a complete rewrite using TypeScript.
+- AngularJS is rarely used today, and the latest version of Angular is version 17.
+
+Creating a New project 
+- Install NODE JS on development machine.
+- Install angular CLI globally.
+- Create an Angular project.
+- Compile & run Angular project.
+
+Angular CLI 
+- Angular CLI is a command line interface which we use to create new angular project or generate some boiler plate code as well as create deployable packages.
+```
+    npm install -global @angular/cli@latest
+```
+
+Create Angular Project
+- To create a new angular project, move to the folder where you want to create the project using command prompt/terminal and type following command.
+```
+    ng new project-name
+```
+
+Compile & Run Angular Application
+- To run Angular project, move to the project folder using command prompt/terminal and type following command.
+```
+    ng serve
+```
+
+Angular Project
+- Bootstraping
+    -- Bootstraping is the process of initializing or loading the Angular Application
+    -- It's done by importing `AppModule` in `main.ts`.
+- Angular Cli(ng serve)
+    -- Angular CLI saves the compile Angular application in the memory & directly starts it.
+    -- If we make any changes to our Angular app, Angular CLI will recompile & update the file.
+    -- Angular CLI uses Webpack to traverse through our Angular app & it bundles JS & other files into one or more bundles.
+    -- Then Angular CLI also injects the bundled JavaScript & CSS files in the index.html.
+- index.html
+    -- When the index.html file is loaded, Angular core libraries & third party libraries are also loaded by that time.
+    -- Now Angular needs to locate the main entry point.
+- angular.json
+    -- This file contains all the configurations for your application like source map, optimization level etc.
+- main.ts
+- AppModule
+    -- This class is the root module which contains all other modules.
+    -- Imported in main.ts using `import { AppModule } from './app/app.
+- AppComponent
+    -- The component that represents the entire application.
+    -- Injectable service can be used inside this component.
+- View Template(app.component.html)
+    -- HTML template for the view.
+
+
+What is TypeScript?
+- TypeScript is a free & open-source programming language developed by Microsoft.
+- Superset of JavaScript with static type checking.
+
+Advantage of TypeScript
+- TypeScript is a Superset of javaScript.
+- TypeScript has additional features, which do not exist in current version of JavaScript Supported by most browsers.
+- TypeScript is strongly typed. But JavaScript is dynamically typed.
+- TypeScript has some object-oriented features that we do not have in JavaScript yet.
+- With TypeScript, we can catch errors at compile time.
+
+What is a Component?
+- A component is a place of user interface.
+- Every Angular application has at least one component.
+- An Angular application is essentially a tree of component.
+- Combining all these Components together makes an Angular UI.
+Examples:-
+                        App 
+-------------------------|----------------------
+|           |            |          |          |
+Header    Navbar        Main      Footer    Sidebar
+                         |                     |
+                       Cover                course-1     
+                         |                     |     
+                       Content              course-1     
+                         |                     |     
+                       subscribe            course-1     
+
+Create a Component
+- Create a TypeScript class & export it.
+- Decorate the class with @Component decorator
+- declare the class in main module file
