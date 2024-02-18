@@ -111,3 +111,14 @@ Create a Component
 - Create a TypeScript class & export it.
 - Decorate the class with @Component decorator
 - declare the class in main module file
+
+Disadvantage of using template properly
+- it mixes the HTML & TypeScript code which makes the code less maintainable.
+- Since HTML is written as a string. if there is some error, we not know about it during compile time.
+- If the number of lines of HTML code is huge, it will be messay & not maintainable.
+
+
+Disadvantage of using styles properly
+- It mixes the CSS & TypeScript code which makes the code less maintainable.
+- Since CSS is written as a string, if there is some error, we will not know about it during compile time.
+- If the number of lines of CSS code is huge, It will be messay & not maintainable.
